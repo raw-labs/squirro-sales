@@ -8,6 +8,30 @@
 
 ---
 
+## Table of Contents
+
+1. [Purpose & Audience](#1-purpose--audience)
+2. [Executive Summary](#2-executive-summary)
+3. [The Evolution: From Data Virtualization to So Much More](#3-the-evolution-from-data-virtualization-to-so-much-more)
+4. [Important Integration Notes](#4-important-integration-notes)
+5. [Where RAW Labs Fits in the Squirro Stack](#5-where-raw-labs-fits-in-the-squirro-stack)
+6. [Active MXCP Deployments Today](#6-active-mxcp-deployments-today)
+7. [The Hybrid Approach: Virtualization + Performance](#7-the-hybrid-approach-virtualization--performance)
+8. [Ideal Customer Profile (ICP) - MXCP](#8-ideal-customer-profile-icp---mxcp)
+9. [Technical Scoping Questions](#9-technical-scoping-questions)
+10. [The Sales Conversation (Talk Track)](#10-the-sales-conversation-talk-track)
+11. [Demo Script (30–45 minutes)](#11-demo-script-3045-minutes)
+12. [Recommended CTAs for Reps (Internal)](#12-recommended-ctas-for-reps-internal)
+13. [Pilot Runbook](#13-pilot-runbook)
+14. [Security & Compliance (Facts to Use with IT)](#14-security--compliance-facts-to-use-with-it)
+15. [Deployment Patterns (Aligns with Squirro)](#15-deployment-patterns-aligns-with-squirro)
+16. [Packaging and Pricing Guidance](#16-packaging-and-pricing-guidance)
+17. [Case Studies](#17-case-studies)
+18. [Internal Escalation (RAW Labs)](#18-internal-escalation-raw-labs)
+19. [Resources](#19-resources)
+
+---
+
 ## 1. Purpose & Audience
 
 This playbook equips Squirro sales teams and SEs to position, qualify, demo, and close deals that include RAW Labs MXCP for live data access. Use this guide to understand when MXCP adds value, how to demonstrate it, and how to handle technical/commercial discussions.
