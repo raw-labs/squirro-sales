@@ -10,7 +10,7 @@
 
 ## 1. The Gap We Fill
 
-**SquirroChat excels at documents. But what about live operational data?**
+**Squirro Chat excels at documents. But what about live operational data?**
 
 Enterprise AI needs both:
 - ✓ Documents & knowledge (Squirro's strength)
@@ -24,15 +24,13 @@ Enterprise AI needs both:
 
 ## 2. How It Works
 
-```
-1. User asks SquirroChat about data in SAP, Salesforce, or trading systems
-2. Squirro Agent invokes typed MXCP tool with parameters
+1. User asks Squirro Chat about data in SAP, Salesforce, or trading systems
+2. Squirro Agent invokes typed MXCP tool
 3. MXCP queries the live business application with security policies applied
 4. Response returned with full audit trail
-```
 
 ### 2.1 What Makes This Exciting for Customers
-- **Instant answers**: Ask about SAP inventory, get answers in 3 seconds
+- **Instant answers**: Ask about SAP inventory, get answers instantly
 - **Bank-grade security**: Every query authenticated, authorized, and audited
 - **Zero data duplication**: Sensitive data stays where it belongs
 - **Natural language**: "Show me overdue invoices" instead of complex SQL
