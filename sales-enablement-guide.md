@@ -74,7 +74,7 @@ A fully functional demo environment is available:
 - **Virtualization layer**: Real‑time access to SAP, Salesforce, trading systems, and internal applications; optional dbt materializations for hot paths.
 - **Governance**: OAuth2 via enterprise IdPs, RBAC, dynamic masking, row/column security, complete audit trails.
 
-![RAW Labs MXCP Integration Architecture](arch.png)
+![RAW Labs MXCP Integration Architecture](assets/arch.png)
 *Figure: How RAW Labs MXCP integrates with Squirro's Enhanced RAG and Agent Framework*
 
 ---
@@ -83,7 +83,7 @@ A fully functional demo environment is available:
 
 MXCP is not just a concept - it's actively deployed and serving real cases:
 
-![Active MXCP Servers](active_mxcp_servers.png)
+![Active MXCP Servers](assets/active_mxcp_servers.png)
 *Figure: Current MXCP deployments across various industries and use cases*
 
 ### What This Shows Your Prospects
@@ -409,7 +409,7 @@ Key points to emphasize:
 - **Containers**: Docker Compose; Helm/Kubernetes supported.
 - **Cloud**: AWS/GCP/Azure/Hetzner; single‑tenant isolation.
 
-![RAW Labs MXCP Deployment Options](deployment.png)
+![RAW Labs MXCP Deployment Options](assets/deployment.png)
 *Figure: Flexible deployment patterns aligned with Squirro's infrastructure options*
 
 ---
