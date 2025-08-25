@@ -19,8 +19,8 @@ This playbook equips Squirro sales teams and SEs to position, qualify, demo, and
 **RAW Labs MXCP enhances Squirro's Enhanced RAG and Agent Framework with secure, real-time access to operational data.**
 
 - **What**: Enterprise-grade MCP server connecting Squirro to ERP, CRM, trading platforms, and internal applications
-- **Why**: Customers need AI that queries live business systems (not just documents), with sub-minute freshness and audit trails
-- **How**: Typed MCP tools with RBAC policies, dynamic masking, and audit trails
+- **Why**: Customers need AI that queries live business systems (not just documents), with sub-second freshness and audit trails
+- **How**: MCP tools with stricting typing and validating, testing, RBAC policies, dynamic masking, audit trails and observability
 
 ---
 
@@ -46,19 +46,17 @@ When customers say "we need data virtualization," they're thinking small. Show t
 ## 4. Important Integration Notes
 
 ### Policy Enforcement & Security Features
-While MXCP supports advanced security features (OAuth, RBAC, policy enforcement, dynamic masking), these require Squirro to pass authenticated user tokens to MXCP. **This integration is not yet implemented.**
+While MXCP supports advanced security features (OAuth, RBAC, policy enforcement, dynamic masking), these require Squirro Chat support. **This support is not yet implemented (as of Aug 2025).**
 
 **Current Status:**
 - MXCP has full capability for user-based policies and data filtering
-- Squirro needs to be updated to pass user context/roles in API calls to MXCP
-- Until this integration is complete, security demonstrations will be limited
+- Squirro Chat needs to be updated to support delegation into MXCP
+- Until this integration is complete, security demonstrations may be limited
 
 **Impact on Sales:**
-- Do not demo user-specific data filtering or role-based access through SquirroChat
-- Focus on data access, performance, and audit capabilities
+- Do not demo user-specific data filtering or role-based access through Squirro Chat
+- Focus on capabilities such as data access, performance, and audit capabilities
 - Position security features as "roadmap" items pending integration
-
-**Action Required:** Squirro development team needs to implement authenticated MXCP calls with user context before full security features can be demonstrated.
 
 ### Demo Environment Available
 A fully functional demo environment is available:
@@ -70,8 +68,8 @@ A fully functional demo environment is available:
 
 ## 5. Where RAW Labs Fits in the Squirro Stack
 
-- **Enhanced RAG and Agents**: MXCP provides MCP tools Squirro agents invoke for structured data tasks.
-- **Virtualization layer**: Real‑time access to SAP, Salesforce, trading systems, and internal applications; optional dbt materializations for hot paths.
+- **Enhanced RAG and Agents**: MXCP provides MCP tools that Squirro agents invoke for structured data tasks.
+- **Virtualization layer**: Real‑time access to all operational systems; optional data materializations and caching for hot paths.
 - **Governance**: OAuth2 via enterprise IdPs, RBAC, dynamic masking, row/column security, complete audit trails.
 
 ![RAW Labs MXCP Integration Architecture](assets/arch.png)
@@ -92,13 +90,13 @@ MXCP is not just a concept - it's actively deployed and serving real cases:
 - **Proven scale**: Handling millions of records in production
 - **Global reach**: Deployments across different regions and industries
 
-### Deployments
+### Deployments integrated with Squirro Chat
 - **Swiss Business Registry**: 1,000+ companies with real-time search and analytics
 - **UAE Ministry of Economy**: 50M+ business licenses accessible via natural language
 - **Vodafone UK**: Network planning across 7 data sources
 - **Banking Compliance**: C-RAF framework reporting for Hong Kong banks
 
-This isn't theoretical - it's operational and delivering value today.
+_This isn't theoretical - it's operational and delivering value today._
 
 ---
 
@@ -112,7 +110,7 @@ MXCP uniquely combines both real-time virtualization AND optimized data ingestio
 - Perfect for sensitive data that must stay in place
 - Ideal when you need the absolute latest information
 
-### 7.2 Performance Layer (dbt/DuckDB)
+### 7.2 Performance Layer (keyworrds: dbt/DuckDB)
 - Ingest and optimize frequently accessed data
 - Use dbt to transform and model data
 - Cache in high-performance DuckDB
@@ -120,7 +118,7 @@ MXCP uniquely combines both real-time virtualization AND optimized data ingestio
 
 ### 7.3 Best of Both Worlds
 Most production deployments use BOTH approaches:
-- **Hot paths**: Frequently queried data cached in DuckDB for <1s responses
+- **Hot paths**: Frequently queried data cached in DuckDB for <1s responses over very large datasets
 - **Long tail**: Less common queries go directly to source via virtualization
 - **Sensitive data**: Stays in original systems, accessed only when needed
 - **Single interface**: Users don't need to know which approach is used
@@ -136,7 +134,6 @@ This hybrid architecture ensures optimal performance while maintaining data gove
 - ✓ Requires sub-minute data freshness for decision-making
 - ✓ Strict data governance/compliance requirements (banking, healthcare, government)
 - ✓ Cannot duplicate sensitive data outside source systems
-
 
 ## 9. Technical Scoping Questions
 
@@ -178,7 +175,7 @@ This hybrid architecture ensures optimal performance while maintaining data gove
 ## 10. The Sales Conversation (Talk Track)
 
 Opening: 
-> "SquirroChat is great on documents. With RAW Labs, it also works with your SAP, Salesforce, trading platforms—securely and with full audit."
+> "Squirro Chat is great on documents. With RAW Labs, it also works with your SAP, Salesforce, trading platforms—securely and with full audit."
 
 Position by audience:
 - **Business**: "Real‑time answers from your ERP and CRM, not yesterday's export."
@@ -186,7 +183,7 @@ Position by audience:
 - **Data teams**: "Connect any system; SQL and Python; optional dbt for performance."
 
 Common objections and responses:
-- "We already have SquirroChat" → "Great—this adds live systems without migration."
+- "We already have Squirro Chat" → "Great—this adds live systems without migration."
 - "Security/compliance risk" → "Every access is authenticated, authorized, audited; masking and row/column controls."
 - "Sounds complex" → "POC in one afternoon for UAE; Vodafone in days, not months."
 
@@ -399,7 +396,6 @@ Key points to emphasize:
 - **Authorization**: RBAC with policy enforcement.
 - **Data protection**: Dynamic masking; row/column security through policies.
 - **Audit**: Complete tracking for compliance; tracks identity, params, sources, policies.
-
 
 ---
 
