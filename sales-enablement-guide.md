@@ -16,7 +16,7 @@ This playbook equips Squirro sales teams and SEs to position, qualify, demo, and
 
 ## 2. Executive Summary
 
-**RAW Labs MXCP powers Squirro's Enhanced RAG and Agent Framework with secure, real-time access to operational data.**
+**RAW Labs MXCP enhances Squirro's Enhanced RAG and Agent Framework with secure, real-time access to operational data.**
 
 - **What**: Enterprise-grade MCP server connecting Squirro to ERP, CRM, trading platforms, and internal applications
 - **Why**: Customers need AI that queries live business systems (not just documents), with sub-minute freshness and audit trails
