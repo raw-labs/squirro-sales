@@ -60,7 +60,7 @@ While MXCP supports advanced security features (OAuth, RBAC, policy enforcement,
 
 ### Demo Environment Available
 A fully functional demo environment is available:
-- **Squirro Chat**: https://testingjg.squirro.cloud/ (Project: HKMA Experiment Lab)
+- **Squirro Chat**: https://testingjg.squirro.cloud/ (Contains: "C-RAF Compliance (Opportunity)" and "Swiss Business Registry (Demo)")
 - **MXCP Server**: https://ru9grd9gq8.eu-west-1.awsapprunner.com/mcp
 - **Dataset**: 1,000 Swiss companies with search, aggregation, and time-series analysis capabilities
 
