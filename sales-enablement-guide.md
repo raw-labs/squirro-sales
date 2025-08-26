@@ -81,11 +81,14 @@ A fully functional demo environment is available:
 ## 6. Case Studies
 
 ### Production Deployments
-- **UAE Government**: Real‑time MCP access to business licenses; POC built in one afternoon; supports queries like recent licenses, owner nationalities, emirate breakdowns.
+- **UAE Business Registry**: Real‑time MCP access to business licenses; POC built in one afternoon; supports queries like recent licenses, owner nationalities, emirate breakdowns.
 - **Vodafone UK**: Unified 7 Excel/CSV sources for site selection/capacity planning; 92.9% weighted accuracy; <4s responses; 16‑week POC success.
 
 ### Exciting Opportunities
 - **C-RAF Compliance**: Working with banks to meet HKMA's Cyber Resilience Assessment Framework; enables natural language queries like "Which banks need help with baseline cyber maturity?" or "Show compliance gaps across institutions"; represents a generic compliance use case applicable globally.
+
+### Demo Deployments
+- **Swiss Business Registry**: A "clone" of the UAE Business Registry demo using public Swiss data.
 
 ### Active MXCP Deployments Today
 MXCP is not just a concept - it's actively deployed and serving real cases:
