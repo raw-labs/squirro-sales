@@ -80,21 +80,17 @@ A fully functional demo environment is available:
 
 ## 6. Case Studies
 
-### Production Deployments
-- **UAE Business Registry**: Real‑time MCP access to business licenses; POC built in one afternoon; supports queries like recent licenses, owner nationalities, emirate breakdowns.
-- **Vodafone UK**: Unified 7 Excel/CSV sources for site selection/capacity planning; 92.9% weighted accuracy; <4s responses; 16‑week POC success.
+### Project Deployments
+- **UAE Business Registry**: 50M+ business licenses accessible via natural language; Real‑time access to business licenses; POC built in one afternoon; supports queries like recent licenses, owner nationalities, emirate breakdowns.
+- **Vodafone UK**: Network planning across 7 data sources; Unified 7 Excel/CSV sources for site selection/capacity planning; 92.9% weighted accuracy; <4s responses; 16‑week POC success.
 
 ### Exciting Opportunities
 - **C-RAF Compliance**: Working with banks to meet HKMA's Cyber Resilience Assessment Framework; enables natural language queries like "Which banks need help with baseline cyber maturity?" or "Show compliance gaps across institutions"; represents a generic compliance use case applicable globally.
 
 ### Demo Deployments
-- **Swiss Business Registry**: A "clone" of the UAE Business Registry project but using public Swiss data.
+- **Swiss Business Registry**: A "clone" of the UAE Business Registry project but using public Swiss data; 1,000+ companies with real-time search and analytics.
 
-### Active MXCP Deployments Today
-MXCP is not just a concept - it's actively deployed and serving real cases:
-
-![Active MXCP Servers](assets/active_mxcp_servers.png)
-*Figure: Current MXCP deployments across various industries and use cases*
+_All these deployments are integrated with Squirro Chat._
 
 ### What You Can Tell Your Prospects
 - **Production-ready**: Multiple live deployments, not just demos
@@ -102,13 +98,11 @@ MXCP is not just a concept - it's actively deployed and serving real cases:
 - **Proven scale**: Handling millions of records in production
 - **Global reach**: Deployments across different regions and industries
 
-### Deployments integrated with Squirro Chat
-- **UAE Business Registry (Project)**: 50M+ business licenses accessible via natural language
-- **Vodafone UK (Project)**: Network planning across 7 data sources
-- **Banking Compliance (Opportunity)**: C-RAF framework reporting
-- **Swiss Business Registry (Demo)**: 1,000+ companies with real-time search and analytics
+### Active MXCP Servers for Squirro
 
-_This isn't theoretical - it's operational and delivering value today._
+![Active MXCP Servers](assets/active_mxcp_servers.png)
+
+*Figure: Current MXCP deployments maintained by RAW Labs for Squirro.*
 
 ---
 
