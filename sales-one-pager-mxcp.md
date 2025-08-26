@@ -72,10 +72,10 @@ Enterprise AI needs both:
 
 ## 5. Why MXCP Wins
 
-✓ **It just works** – UAE had it running in one afternoon
-✓ **Customers trust it** – Bank-grade security that passes IT reviews
-✓ **No disruption** – Connects to existing SAP, Salesforce, trading systems
-✓ **Future-proof** – Built on MCP, the emerging standard for AI-to-data connections
+* ✓ **It just works** – UAE had it running in one afternoon
+* ✓ **Customers trust it** – Bank-grade security that passes IT reviews
+* ✓ **No disruption** – Connects to existing SAP, Salesforce, trading systems
+* ✓ **Future-proof** – Built on MCP, the emerging standard for AI-to-data connections
 
 ---
 
