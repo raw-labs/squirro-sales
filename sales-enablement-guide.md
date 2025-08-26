@@ -1,4 +1,4 @@
-# Squirro Sales Playbook: RAW Labs MXCP Data Virtualization
+# Squirro Sales Playbook: RAW Labs MXCP: Real-Time Data for Squirro's Enhanced RAG
 
 **Partner**: Squirro  
 **Document Type**: Sales Enablement Guide  
