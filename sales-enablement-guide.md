@@ -73,6 +73,7 @@ A fully functional demo environment is available:
 - **Governance**: OAuth2 via enterprise IdPs, RBAC, dynamic masking, row/column security, complete audit trails.
 
 ![RAW Labs MXCP Integration Architecture](assets/arch.png)
+
 *Figure: How RAW Labs MXCP integrates with Squirro's Enhanced RAG and Agent Framework*
 
 ---
