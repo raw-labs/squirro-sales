@@ -403,6 +403,12 @@ Key points to emphasize:
 - **Data protection**: Dynamic masking; row/column security through policies.
 - **Audit**: Complete tracking for compliance; tracks identity, params, sources, policies.
 
+### Forward Looking: Governance & Evidence
+* RAW Labs is actively extending MXCP with **cryptographic audit evidence and OpenTelemetry-native observability**.
+* Roadmap includes **auditor-accepted evidence bundles, policy enforcement via OTel Collector**, and **industry templates (Basel III, EU AI Act, GDPR)**.
+* **Target**: Financial services first, with pilots running in late 2025.
+* **Value**: “Trust you can prove” — not just logs, but compliance-grade evidence.
+
 ---
 
 ## 15. Deployment Patterns (Aligns with Squirro)
