@@ -88,7 +88,7 @@ A fully functional demo environment is available:
 - **C-RAF Compliance**: Working with banks to meet HKMA's Cyber Resilience Assessment Framework; enables natural language queries like "Which banks need help with baseline cyber maturity?" or "Show compliance gaps across institutions"; represents a generic compliance use case applicable globally.
 
 ### Demo Deployments
-- **Swiss Business Registry**: A "clone" of the UAE Business Registry demo using public Swiss data.
+- **Swiss Business Registry**: A "clone" of the UAE Business Registry project but using public Swiss data.
 
 ### Active MXCP Deployments Today
 MXCP is not just a concept - it's actively deployed and serving real cases:
@@ -103,10 +103,10 @@ MXCP is not just a concept - it's actively deployed and serving real cases:
 - **Global reach**: Deployments across different regions and industries
 
 ### Deployments integrated with Squirro Chat
-- **Swiss Business Registry**: 1,000+ companies with real-time search and analytics
-- **UAE Ministry of Economy**: 50M+ business licenses accessible via natural language
-- **Vodafone UK**: Network planning across 7 data sources
-- **Banking Compliance**: C-RAF framework reporting for Hong Kong banks
+- **UAE Business Registry (Project)**: 50M+ business licenses accessible via natural language
+- **Vodafone UK (Project)**: Network planning across 7 data sources
+- **Banking Compliance (Opportunity)**: C-RAF framework reporting
+- **Swiss Business Registry (Demo)**: 1,000+ companies with real-time search and analytics
 
 _This isn't theoretical - it's operational and delivering value today._
 
