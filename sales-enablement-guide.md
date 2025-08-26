@@ -77,14 +77,22 @@ A fully functional demo environment is available:
 
 ---
 
-## 6. Active MXCP Deployments Today
+## 6. Case Studies
 
+### Production Deployments
+- **UAE Government**: Real‑time MCP access to business licenses; POC built in one afternoon; supports queries like recent licenses, owner nationalities, emirate breakdowns.
+- **Vodafone UK**: Unified 7 Excel/CSV sources for site selection/capacity planning; 92.9% weighted accuracy; <4s responses; 16‑week POC success.
+
+### Exciting Opportunities
+- **C-RAF Compliance**: Working with banks to meet HKMA's Cyber Resilience Assessment Framework; enables natural language queries like "Which banks need help with baseline cyber maturity?" or "Show compliance gaps across institutions"; represents a generic compliance use case applicable globally.
+
+### Active MXCP Deployments Today
 MXCP is not just a concept - it's actively deployed and serving real cases:
 
 ![Active MXCP Servers](assets/active_mxcp_servers.png)
 *Figure: Current MXCP deployments across various industries and use cases*
 
-### What This Shows Your Prospects
+### What You Can Tell Your Prospects
 - **Production-ready**: Multiple live deployments, not just demos
 - **Diverse use cases**: From government registries to telco analytics to compliance reporting
 - **Proven scale**: Handling millions of records in production
@@ -110,7 +118,7 @@ MXCP uniquely combines both real-time virtualization AND optimized data ingestio
 - Perfect for sensitive data that must stay in place
 - Ideal when you need the absolute latest information
 
-### 7.2 Performance Layer (keyworrds: dbt/DuckDB)
+### 7.2 Performance Layer (keywords: dbt/DuckDB)
 - Ingest and optimize frequently accessed data
 - Use dbt to transform and model data
 - Cache in high-performance DuckDB
@@ -436,18 +444,7 @@ Key points to emphasize:
 
 ---
 
-## 17. Case Studies
-
-### Production Deployments
-- **UAE Government**: Real‑time MCP access to business licenses; POC built in one afternoon; supports queries like recent licenses, owner nationalities, emirate breakdowns.
-- **Vodafone UK**: Unified 7 Excel/CSV sources for site selection/capacity planning; 92.9% weighted accuracy; <4s responses; 16‑week POC success.
-
-### Exciting Opportunities
-- **C-RAF Compliance**: Working with banks to meet HKMA's Cyber Resilience Assessment Framework; enables natural language queries like "Which banks need help with baseline cyber maturity?" or "Show compliance gaps across institutions"; represents a generic compliance use case applicable globally.
-
----
-
-## 18. Internal Escalation (RAW Labs)
+## 17. Internal Escalation (RAW Labs)
 
 - **Technical questions**: Pavlos (Implementation Lead) – pavlos@raw-labs.com
 - **Pricing/commercial**: Miguel (CEO) – miguel@raw-labs.com
@@ -455,7 +452,7 @@ Key points to emphasize:
 
 ---
 
-## 19. Resources
+## 18. Resources
 
 - **RAW Labs**: [www.raw-labs.com](https://www.raw-labs.com/)
 - **MXCP**: [mxcp.dev](https://mxcp.dev)
