@@ -314,7 +314,7 @@ flowchart LR
 - **Try variations**: "Find GmbH companies with over 1 million CHF capital"
 
 #### 3. Complex Analytics (10 min)
-**Prompt**: "What's the average share capital by legal form? Group by canton"
+**Prompt**: "What's the average share capital by legal form and canton?"
 - **Tool used**: `aggregate_companies` with group_by parameter
 - **Show**: Instant aggregation across entire dataset
 - **Follow up**: "Show me industry distribution for financial services (code 64)"
