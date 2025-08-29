@@ -60,7 +60,7 @@ While MXCP supports advanced security features (OAuth, RBAC, policy enforcement,
 
 ### Demo Environment Available
 A fully functional demo environment is available:
-- **Squirro Chat**: https://testingjg.squirro.cloud/ (Contains: "C-RAF Compliance (Opportunity)" and "Swiss Business Registry (Demo)")
+- **Squirro Chat**: https://mxcp-demos.squirro.cloud/ (Contains: "C-RAF Compliance (Opportunity)" and "Swiss Business Registry (Demo)")
 - **MXCP Server**: https://ru9grd9gq8.eu-west-1.awsapprunner.com/mcp
 - **Dataset**: 1,000 Swiss companies with search, aggregation, and time-series analysis capabilities
 
@@ -244,7 +244,7 @@ flowchart TD
 ```mermaid
 flowchart LR
     User["👤 Sales Rep<br/><i>Dashboard & Insights</i>"]
-    SC["<b>SquirroChat</b><br/>testingjg.squirro.cloud<br/><i>Natural Language Processing</i>"]
+    SC["<b>SquirroChat</b><br/>mxcp-demos.squirro.cloud<br/><i>Natural Language Processing</i>"]
     RAG["<b>Enhanced RAG +<br/>Agent Framework</b><br/><i>Intelligent Query Routing</i>"]
     MXCP["<b>MXCP Server</b><br/>AWS App Runner<br/><i>ru9grd9gq8.eu-west-1.awsapprunner.com/mcp</i>"]
     Tools{{"<b>MCP Tools</b><br/><i>API Gateway</i>"}}
@@ -289,7 +289,7 @@ flowchart LR
 ```
 
 ### 11.1 Setup Requirements
-- **Live Demo Environment**: https://testingjg.squirro.cloud/
+- **Live Demo Environment**: https://mxcp-demos.squirro.cloud/
 - **MXCP Server**: https://ru9grd9gq8.eu-west-1.awsapprunner.com/mcp
 - **Dataset**: 1,000 Swiss company registrations (30 years of data)
 - **Pre-configured MXCP tools**: search_companies, aggregate_companies, timeseries_companies, categorical_company_values
