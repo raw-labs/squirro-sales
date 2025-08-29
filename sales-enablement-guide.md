@@ -357,7 +357,7 @@ These queries work with the live demo environment:
 - "What legal forms exist in Switzerland?"
 
 ### Demo Video
-<video src="demo.webm" autoplay loop muted playsinline></video>
+<video src="assets/demo.webm" autoplay loop muted playsinline></video>
 
 
 ---
