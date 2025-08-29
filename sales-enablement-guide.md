@@ -356,6 +356,10 @@ These queries work with the live demo environment:
 - "List all available industry codes"
 - "What legal forms exist in Switzerland?"
 
+### Demo Video
+<video src="demo.webm" autoplay loop muted playsinline></video>
+
+
 ---
 
 ## 12. Recommended CTAs for Reps (Internal)
