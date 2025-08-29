@@ -358,7 +358,7 @@ These queries work with the live demo environment:
 
 ### Demo Video
 
-![Demo](assets/demo.gif)
+![Demo](./assets/demo.gif)
 
 
 ---
