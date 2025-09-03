@@ -1,4 +1,4 @@
-# Squirro Sales Playbook: RAW Labs MXCP: Real-Time Data for Squirro's Enhanced RAG
+# Squirro Sales Playbook: RAW Labs MXCP Enterprise Data Platform
 
 **Partner**: Squirro  
 **Document Type**: Sales Enablement Guide  
@@ -31,7 +31,7 @@ You might have heard of RAW Labs as Squirro's "data virtualization" or "operatio
 ### What We've Become
 - **MCP Pioneer**: First production-grade MCP server implementation (the "USB for AI" as everyone calls it)
 - **Universal Connector**: Not just databases anymore - we connect SAP, Salesforce, ServiceNow, trading platforms, payment systems, internal applications
-- **Natural Language to SQL**: Automatically generates complex SQL queries from simple questions - no coding required
+- **Natural Language Data Access**: Automatically executes SQL queries and Python logic from simple questions - no coding required
 - **Performance Engine**: Built-in dbt and DuckDB for blazing-fast materialized views
 - **Security Powerhouse**: Bank-grade authentication, authorization, and audit capabilities
 
@@ -43,33 +43,106 @@ When customers say "we need data virtualization," they're thinking small. Show t
 
 ---
 
-## 4. Important Integration Notes
+## 4. Natural Language Data Access - No Coding Required
 
-### Policy Enforcement & Security Features
-While MXCP supports advanced security features (OAuth, RBAC, policy enforcement, dynamic masking), these require Squirro Chat support. **This support is not yet implemented (as of Aug 2025).**
+### The Game Changer: Dynamic Query Generation
 
-**Current Status:**
-- MXCP has full capability for user-based policies and data filtering
-- Squirro Chat needs to be updated to support delegation into MXCP
-- Until this integration is complete, security demonstrations may be limited
+MXCP enables business users to query data and invoke complex logic using natural language - **no pre-defined templates or coding needed**. This dramatically accelerates deployment and adoption.
 
-**Impact on Sales:**
-- Do not demo user-specific data filtering or role-based access through Squirro Chat
-- Focus on capabilities such as data access, performance, and audit capabilities
-- Position security features as "roadmap" items pending integration
+**Flexible Implementation Options:**
 
-### Demo Environment Available
-A fully functional demo environment is available:
-- **Squirro Chat**: https://mxcp-demos.squirro.cloud/ (Contains: "C-RAF Compliance (Opportunity)" and "Swiss Business Registry (Demo)")
-- **MXCP Server**: https://ru9grd9gq8.eu-west-1.awsapprunner.com/mcp
-- **Dataset**: 1,000 Swiss companies with search, aggregation, and time-series analysis capabilities
+**Option A: Automatic Tools from dbt Models**
+- Deploy your dbt models → MXCP creates tools automatically
+- Zero additional development required
+- LLMs instantly understand your data model
+- Perfect for teams already using dbt
+
+**Option B: Dynamic Query Generation**
+- LLMs generate queries on-the-fly from natural language
+- No pre-configuration needed
+- Ideal for exploratory analysis
+- Business users self-serve immediately
+
+**Option C: Custom-Built Tools**
+- Developers create specific SQL or Python tools
+- Implement complex business logic
+- Ensure compliance and accuracy
+- Optimize for performance
+
+### Full Security Maintained
+
+Even with dynamic SQL generation, MXCP enforces:
+- User-based data access controls
+- Row and column-level security
+- Complete audit trails
+- Automatic data masking
+
+### Technology Foundation: SQL + Python Tools
+
+MXCP provides two types of tools:
+
+**SQL Tools (Out-of-the-box)**
+- Query data stored in MXCP's high-performance layer (DuckDB/PostgreSQL)
+- LLMs automatically generate SQL from natural language
+- Perfect for analytics, reporting, and exploration
+- No configuration needed - works immediately
+
+**Python Tools (Custom logic)**
+- Connect to any data source (APIs, databases, files)
+- Handle complex transformations and calculations
+- Integrate with ML models and external services
+- Implement custom business rules
+
+This means customers can:
+- Start immediately with SQL against cached/ingested data
+- Extend to any system using Python tools
+- Combine both approaches in a single solution
+- Scale from simple queries to complex integrations
+
+Note: Snapi (our previous proprietary language) has been deprecated in favor of these industry standards.
+
+**Bottom Line:** Customers can start querying and processing data immediately - no SQL or Python knowledge required.
 
 ---
 
-## 5. Where RAW Labs Fits in the Squirro Stack
+## 5. Important Integration Notes
+
+### Policy Enforcement & Security Features
+
+**MXCP's Full Security Capabilities (Available Today in MXCP):**
+- **User-Based Data Access**: Different users see different data based on their roles
+- **Dynamic Data Filtering**: Automatic row-level and column-level security
+- **Policy Enforcement**: Prevent certain data elements/records from being retrieved
+- **Role-Based Exploration**: Customize which data areas different user roles can explore
+- **Complete Audit Trail**: Every query is tracked with user identity and parameters
+- **Data Masking**: PII and sensitive data automatically masked based on policies
+
+**Integration Status with Squirro:**
+These powerful features require Squirro to pass authenticated user tokens to MXCP. This integration is on the roadmap but not yet implemented.
+
+**What This Means for Sales:**
+- **Can Demo**: MXCP's security architecture, audit capabilities, and policy framework
+- **Can Position**: How different users will see different data once integrated
+- **Can Discuss**: Compliance benefits and governance capabilities
+- **Cannot Demo Yet**: Live user-specific filtering through SquirroChat
+
+**Key Selling Point:**
+Even without full integration, MXCP supervises all operations, handles connectivity, and maintains security. The infrastructure is ready - it's just waiting for the Squirro integration to unlock per-user capabilities.
+
+**Customer Message:** "MXCP has bank-grade security built in. As we complete the Squirro integration, you'll get automatic role-based data access without any changes to your MXCP setup."
+
+### Demo Environment Available
+A fully functional demo environment is available:
+- **Squirro Chat**: https://mxcp-demos.squirro.cloud/ (Project: SwissBiz Demo)
+- **MXCP Server**: https://ru9grd9gq8.eu-west-1.awsapprunner.com/mcp
+- **Dataset**: SwissBiz - 1,000 Swiss companies with search, aggregation, and time-series analysis capabilities
+
+---
+
+## 6. Where RAW Labs Fits in the Squirro Stack
 
 - **Enhanced RAG and Agents**: MXCP provides MCP tools that Squirro agents invoke for structured data tasks.
-- **Virtualization layer**: Real‑time access to all operational systems; optional data materializations and caching for hot paths.
+- **Data Access Layer**: Real‑time connections to SAP, Salesforce, trading systems, and internal applications; automatic tool generation from dbt models; Python tools for custom logic.
 - **Governance**: OAuth2 via enterprise IdPs, RBAC, dynamic masking, row/column security, complete audit trails.
 
 ![RAW Labs MXCP Integration Architecture](assets/arch.png)
@@ -78,7 +151,7 @@ A fully functional demo environment is available:
 
 ---
 
-## 6. Case Studies
+## 7. Case Studies
 
 ### Project Deployments
 - **UAE Business Registry**: 50M+ business licenses accessible via natural language; Real‑time access to business licenses; POC built in one afternoon; supports queries like recent licenses, owner nationalities, emirate breakdowns.
@@ -87,8 +160,25 @@ A fully functional demo environment is available:
 ### Exciting Opportunities
 - **C-RAF Compliance**: Working with banks to meet HKMA's Cyber Resilience Assessment Framework; enables natural language queries like "Which banks need help with baseline cyber maturity?" or "Show compliance gaps across institutions"; represents a generic compliance use case applicable globally.
 
+### Emerging Use Case: Data Quality & ETL Resilience
+- **Problem**: Companies aggregating broker logs for compliance face frequent ETL breakdowns due to schema errors in CSV files
+- **Traditional Approach**: Rigid ETL pipelines that fail on any schema variation
+- **MXCP Solution**:
+  - Intelligent schema inference handles variations automatically
+  - LLMs can assist in data cleaning and normalization
+  - Real-time data quality monitoring and alerting
+  - Graceful handling of malformed data without pipeline failure
+- **Business Impact**: 
+  - Eliminate client dissatisfaction from missing data
+  - Reduce engineering time spent fixing ETL issues
+  - Enable compliance checks even with imperfect data
+  - Create audit trails of data quality issues
+- **Key Message**: "MXCP doesn't just query clean data - it helps you handle messy, real-world data streams"
+
+This represents a massive opportunity in financial services, logistics, and any industry dealing with multi-source data aggregation.
+
 ### Demo Deployments
-- **Swiss Business Registry**: A "clone" of the UAE Business Registry project but using public Swiss data; 1,000+ companies with real-time search and analytics.
+- **SwissBiz Demo**: A demonstration using public Swiss business data; 1,000+ companies with real-time search and analytics.
 
 _All these deployments are integrated with Squirro Chat._
 
@@ -106,26 +196,26 @@ _All these deployments are integrated with Squirro Chat._
 
 ---
 
-## 7. The Hybrid Approach: Virtualization + Performance
+## 8. The Hybrid Approach: Real-Time + Cached Data
 
 MXCP uniquely combines both real-time virtualization AND optimized data ingestion in a single platform:
 
-### 7.1 Real-Time Virtualization
+### 8.1 Real-Time Data Access
 - Query live data directly at the source
 - No data duplication or movement
 - Perfect for sensitive data that must stay in place
 - Ideal when you need the absolute latest information
 
-### 7.2 Performance Layer (keywords: dbt/DuckDB)
+### 8.2 Performance Layer (dbt/DuckDB)
 - Ingest and optimize frequently accessed data
 - Use dbt to transform and model data
 - Cache in high-performance DuckDB
 - Reduce load on production systems
 
-### 7.3 Best of Both Worlds
+### 8.3 Best of Both Worlds
 Most production deployments use BOTH approaches:
 - **Hot paths**: Frequently queried data cached in DuckDB for <1s responses over very large datasets
-- **Long tail**: Less common queries go directly to source via virtualization
+- **Long tail**: Less common queries go directly to source systems
 - **Sensitive data**: Stays in original systems, accessed only when needed
 - **Single interface**: Users don't need to know which approach is used
 
@@ -133,7 +223,7 @@ This hybrid architecture ensures optimal performance while maintaining data gove
 
 ---
 
-## 8. Ideal Customer Profile (ICP) - MXCP
+## 9. Ideal Customer Profile (ICP) - MXCP
 
 ### Strong Indicators for MXCP
 - ✓ Needs AI to query operational systems (SAP, Salesforce, Oracle ERP, trading platforms)
@@ -141,35 +231,36 @@ This hybrid architecture ensures optimal performance while maintaining data gove
 - ✓ Strict data governance/compliance requirements (banking, healthcare, government)
 - ✓ Cannot duplicate sensitive data outside source systems
 
-## 9. Technical Scoping Questions
+## 10. Technical Scoping Questions
 
-### 9.1 Data Sources & Volume (for Logic Pack sizing)
+### 10.1 Data Sources & Volume (for Logic Pack sizing)
 - "How many distinct data sources need to be connected?"
 - "What's the total data volume per source (to determine tier: entry/mid-range/enterprise)?"
 - "Are these standard connectors or custom integrations?"
 - "Do you need both read and write capabilities, or read-only access?"
 
-### 9.2 Data Architecture
+### 10.2 Data Architecture
 - "What types of data sources do you need to connect (databases, APIs, files, data warehouses, SaaS applications)?"
 - "For databases: Which systems and versions (Oracle, SQL Server, PostgreSQL, MongoDB, etc.)?"
 - "For APIs: REST, GraphQL, SOAP? Do you have API documentation?"
 - "For files: What formats (CSV, JSON, XML, Parquet)? Where are they stored (S3, Azure Blob, network drives)?"
 - "For enterprise systems: Which platforms (SAP, Salesforce, ServiceNow, custom applications)?"
+- "Are you currently using dbt? Do you have existing dbt models we can leverage for instant tool generation?"
 - "What are the key relationships between these different data sources?"
 
-### 9.3 Performance & Freshness
+### 10.3 Performance & Freshness
 - "What's the acceptable data latency (real-time, seconds, minutes, hourly)?"
 - "Expected query volume and concurrent users?"
 - "Are there specific peak usage patterns?"
 - "Which queries need optimization via dbt materializations?"
 
-### 9.4 Security & Access Control
+### 10.4 Security & Access Control
 - "How do users authenticate today (SSO provider, MFA requirements)?"
 - "Should we mirror source system permissions?"
 - "Any specific data masking requirements (PII, financial data)?"
 - "Compliance frameworks to follow (ISO 27001, SOC 2, industry-specific)?"
 
-### 9.5 Integration Requirements
+### 10.5 Integration Requirements
 - "How should we connect to your systems (direct connection, VPN, API gateway, cloud storage)?"
 - "Any firewall rules, IP whitelisting, or network restrictions?"
 - "For cloud services: Which regions? Any data residency requirements?"
@@ -178,7 +269,7 @@ This hybrid architecture ensures optimal performance while maintaining data gove
 
 ---
 
-## 10. The Sales Conversation (Talk Track)
+## 11. The Sales Conversation (Talk Track)
 
 Opening: 
 > "Squirro Chat is great on documents. With RAW Labs, it also works with your SAP, Salesforce, trading platforms—securely and with full audit."
@@ -195,7 +286,7 @@ Common objections and responses:
 
 ---
 
-## 11. Demo Script (30–45 minutes)
+## 12. Demo Script (30–45 minutes)
 
 ### Demo Flow Overview
 
@@ -252,7 +343,7 @@ flowchart LR
     T2["<b>aggregate_companies</b><br/><i>Analytics & grouping</i>"]
     T3["<b>timeseries_companies</b><br/><i>Trend analysis</i>"]
     T4["<b>categorical_company_values</b><br/><i>Data discovery</i>"]
-    DB[("<b>🗄️ DuckDB</b><br/>1,000 Swiss Companies<br/>30 years of data")]
+    DB[("<b>🗄️ DuckDB</b><br/>SwissBiz Dataset<br/>1,000 companies, 30 years")]
     DBT["<b>dbt model:</b><br/>swiss_companies<br/><i>Transformations</i>"]
     
     User --> SC
@@ -288,13 +379,13 @@ flowchart LR
     class DBT dbtClass
 ```
 
-### 11.1 Setup Requirements
+### 12.1 Setup Requirements
 - **Live Demo Environment**: https://mxcp-demos.squirro.cloud/
 - **MXCP Server**: https://ru9grd9gq8.eu-west-1.awsapprunner.com/mcp
-- **Dataset**: 1,000 Swiss company registrations (30 years of data)
+- **Dataset**: SwissBiz - 1,000 Swiss company registrations (30 years of data)
 - **Pre-configured MXCP tools**: search_companies, aggregate_companies, timeseries_companies, categorical_company_values
 
-### 11.2 Demo Flow
+### 12.2 Demo Flow
 
 #### 1. Opening (5 min)
 - Show standard SquirroChat working with documents
@@ -363,7 +454,7 @@ These queries work with the live demo environment:
 
 ---
 
-## 12. Recommended CTAs for Reps (Internal)
+## 13. Recommended CTAs for Reps (Internal)
 
 Choose the CTA that best fits your customer's situation:
 
@@ -380,9 +471,9 @@ Key points to emphasize:
 
 ---
 
-## 13. Pilot Runbook
+## 14. Pilot Runbook
 
-### 13.1 Steps
+### 14.1 Steps
 1. **Discovery**: Identify 1–2 high‑value tables/APIs; define success metrics
 2. **Setup**: Stand up MXCP; connect to source systems
 3. **Configuration**: Define 2–3 tools with typed inputs/outputs
@@ -393,7 +484,7 @@ Key points to emphasize:
 8. **Audit Review**: Export audit trails and verify compliance
 9. **Stakeholder Review**: Executive demo and go/no‑go decision
 
-### 13.2 Success Criteria
+### 14.2 Success Criteria
 - **Performance**: Low latency responses (target <4s)
 - **Accuracy**: High response correctness with proper data filtering
 - **Security**: Audit trail present for every query
@@ -401,7 +492,7 @@ Key points to emphasize:
 
 ---
 
-## 14. Security & Compliance (Facts to Use with IT)
+## 15. Security & Compliance (Facts to Use with IT)
 
 - **Authentication**: OAuth 2.0 with enterprise IdPs (Azure AD, GitHub, Atlassian); API keys for services.
 - **Authorization**: RBAC with policy enforcement.
@@ -416,7 +507,7 @@ Key points to emphasize:
 
 ---
 
-## 15. Deployment Patterns (Aligns with Squirro)
+## 16. Deployment Patterns (Aligns with Squirro)
 
 - **On‑Prem**: RHEL/Rocky; VM or standard install.
 - **Containers**: Docker Compose; Helm/Kubernetes supported.
@@ -427,14 +518,35 @@ Key points to emphasize:
 
 ---
 
-## 16. Packaging and Pricing Guidance
+## 17. Infrastructure Requirements (Simplified)
 
-### 16.1 Core Concept: Logic Pack
+**MXCP is remarkably lightweight** - it runs on a laptop for development or a modest server for production.
+
+**Key Requirements:**
+- **Memory**: 2-4GB RAM (compare to 64GB+ for traditional data platforms)
+- **Storage**: 1GB base + space for your data
+- **Network**: Standard HTTPS connectivity
+
+**Deployment Options:**
+- Cloud (AWS, Azure, GCP) - deploys in minutes
+- On-premise - any Linux server
+- Containers - Docker/Kubernetes ready
+- Can co-locate with Squirro or run separately
+
+**Customer Benefit:** Start small, scale as needed. No massive infrastructure investment required.
+
+**For technical details:** https://mxcp.dev/docs/guides/operational#system-requirements
+
+---
+
+## 18. Packaging and Pricing Guidance
+
+### 18.1 Core Concept: Logic Pack
 - **Logic Pack** = 1 data source + 10GB + 1 API/Dataset
 - Base package includes 1 logic pack
 - Additional logic packs can be added (must be pre-scoped)
 
-### 16.2 Packaging Structure
+### 18.2 Packaging Structure
 - **Base Package**: 1 Logic Pack (source + 10GB + API/Dataset)
 - **Data Volume Tiers**: 
   - Tier 1: Entry level
@@ -445,7 +557,7 @@ Key points to emphasize:
   - Custom Data Sources (bespoke integrations)
 - **Add-ons**: Enterprise Security (SSO), Additional Logic Packs
 
-### 16.3 Commercial Terms
+### 18.3 Commercial Terms
 - Annual support mandatory (percentage of license cost)
 - Minimum contract period applies
 - Cloud costs billed monthly if RAW-managed deployment
@@ -453,15 +565,15 @@ Key points to emphasize:
 
 ---
 
-## 17. Internal Escalation (RAW Labs)
+## 19. Internal Escalation (RAW Labs)
 
 - **Technical questions**: Pavlos (Implementation Lead) – pavlos@raw-labs.com
 - **Pricing/commercial**: Miguel (CEO) – miguel@raw-labs.com
-- **Integration support**: Ben (Templates Lead) – ben@raw-labs.com
+- **Integration support**: Ben (Tools & Integration Lead) – ben@raw-labs.com
 
 ---
 
-## 18. Resources
+## 20. Resources
 
 - **RAW Labs**: [www.raw-labs.com](https://www.raw-labs.com/)
 - **MXCP**: [mxcp.dev](https://mxcp.dev)

@@ -33,16 +33,25 @@ Enterprise AI needs both:
 - **Instant answers**: Ask about SAP inventory, get answers instantly
 - **Bank-grade security**: Every query authenticated, authorized, and audited
 - **Zero data duplication**: Sensitive data stays where it belongs
-- **Natural language**: "Show me overdue invoices" instead of complex SQL
+- **Natural language**: "Show me overdue invoices" - no SQL or Python knowledge required
 
 ### 2.2 When to Use MXCP
 
-| Ingestion (Standard) | Virtualization (MXCP) |
+| Ingestion (Standard) | Real-Time Access (MXCP) |
 |---------------------|----------------------|
 | Document search | Live operational queries |
 | 30-60 min freshness OK | Sub-minute freshness required |
 | Can copy data | Cannot duplicate sensitive data |
 | Knowledge graphs | Direct database aggregations |
+
+### 2.3 Technical Flexibility
+
+**Three ways to deploy MXCP tools:**
+- **Zero effort**: Automatic tool generation from existing dbt models
+- **Custom SQL**: Developer-defined tools for specific business logic
+- **Python tools**: Connect to any API or implement complex transformations
+
+**Result**: Start in hours, not months. Mix and match approaches as needed.
 
 ---
 
@@ -50,7 +59,7 @@ Enterprise AI needs both:
 
 **🇦🇪 UAE Ministry of Economy**
 - **Challenge**: 50M+ business licenses needed for AI queries
-- **Solution**: MXCP virtualization on live government database
+- **Solution**: MXCP real-time access to live government database
 - **Result**: POC in 1 afternoon • Sub-3s queries • Full audit trail
 
 **📱 Vodafone UK**
@@ -75,6 +84,7 @@ Enterprise AI needs both:
 * ✓ **It just works** – UAE had it running in one afternoon
 * ✓ **Customers trust it** – Bank-grade security that passes IT reviews
 * ✓ **No disruption** – Connects to existing SAP, Salesforce, trading systems
+* ✓ **Minimal infrastructure** – Runs on just 4GB RAM (vs 64GB+ for traditional platforms)
 * ✓ **Future-proof** – Built on MCP, the emerging standard for AI-to-data connections
 
 ---
