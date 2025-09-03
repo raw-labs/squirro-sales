@@ -36,6 +36,19 @@ Welcome to the sales enablement documentation for RAW Labs MXCP - the enterprise
 
 **Understanding capabilities?** Read [Section 4: Natural Language Data Access](sales-enablement-guide.md#4-natural-language-data-access---no-coding-required) for the complete picture.
 
+## 🤖 MXCP AI Guide - Your Sales Assistant
+
+Need quick answers about MXCP? Use our AI-powered guide:
+- **Access**: https://mxcp-demos.squirro.cloud/ (Project: MXCP AI Guide)
+- **What it knows**: Complete sales enablement guide + all MXCP technical documentation
+- **Use cases**: 
+  - Quick answers during customer calls
+  - Technical clarifications for RFPs
+  - Integration questions
+  - Pricing and packaging guidance
+
+![MXCP AI Guide](assets/mxcp_ai_guide.png)
+
 ## 🔗 Live Demo Environment
 
 - **Squirro Chat**: https://mxcp-demos.squirro.cloud/ (Project: SwissBiz Demo)

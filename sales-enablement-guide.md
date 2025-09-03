@@ -134,8 +134,11 @@ Even without full integration, MXCP supervises all operations, handles connectiv
 ### Demo Environment Available
 A fully functional demo environment is available:
 - **Squirro Chat**: https://mxcp-demos.squirro.cloud/ (Project: SwissBiz Demo)
+- **MXCP AI Guide**: https://mxcp-demos.squirro.cloud/ (Project: MXCP AI Guide) - Your AI assistant for all MXCP questions
 - **MXCP Server**: https://ru9grd9gq8.eu-west-1.awsapprunner.com/mcp
 - **Dataset**: SwissBiz - 1,000 Swiss companies with search, aggregation, and time-series analysis capabilities
+
+**💡 Pro Tip**: Use the MXCP AI Guide during demos to instantly answer technical questions. It knows our entire sales playbook and technical documentation!
 
 ---
 
@@ -385,6 +388,11 @@ flowchart LR
 - **Dataset**: SwissBiz - 1,000 Swiss company registrations (30 years of data)
 - **Pre-configured MXCP tools**: search_companies, aggregate_companies, timeseries_companies, categorical_company_values
 
+**🎯 Demo Strategy**: Keep the MXCP AI Guide open in another tab. If prospects ask technical questions beyond the demo script, switch to the AI Guide and ask it directly. This shows:
+1. How Squirro can create intelligent assistants from any knowledge base
+2. Real-time problem solving without memorizing every detail
+3. The power of combining documents (sales guide) with structured data (SwissBiz)
+
 ### 12.2 Demo Flow
 
 #### 1. Opening (5 min)
@@ -578,6 +586,7 @@ Key points to emphasize:
 - **RAW Labs**: [www.raw-labs.com](https://www.raw-labs.com/)
 - **MXCP**: [mxcp.dev](https://mxcp.dev)
 - **MXCP White Paper**: [MXCP: The Production-Grade MCP Server and Methodology for Enterprise AI](https://raw-labs.com/blog/mxcp-production-mcp-enterprise-ai)
+- **MXCP AI Guide**: Your 24/7 sales assistant at https://mxcp-demos.squirro.cloud/ (Project: MXCP AI Guide)
 
 ---
 

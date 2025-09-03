@@ -111,6 +111,7 @@ Enterprise AI needs both:
 
 **Technical**: Pavlos (Implementation) – pavlos@raw-labs.com  
 **Commercial**: Miguel (CEO) – miguel@raw-labs.com  
+**AI Assistant**: MXCP AI Guide at https://mxcp-demos.squirro.cloud/  
 **Learn More**: [mxcp.dev](https://mxcp.dev) | [White Paper](https://raw-labs.com/blog/mxcp-production-mcp-enterprise-ai)
 
 ---
