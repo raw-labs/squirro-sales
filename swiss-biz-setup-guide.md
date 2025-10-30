@@ -1,5 +1,8 @@
 # Swiss Biz Setup Guide
 
+**Prerequisite:**  
+Ensure that your Squirro instance is running a **recent version**.
+
 ## 1. Add MXCP Server
 
 The Swiss Biz demo connects to an MXCP server that provides access to synthesized structured data.
@@ -84,3 +87,53 @@ Navigate to the prompt library and add your custom prompts for easy reuse.
 ---
 
 **You're all set!** 🎉 
+
+
+
+# Apendix - Data description
+
+## Dataset Overview
+
+This project contains a synthetic Swiss business registry dataset with **1,000 realistic companies** designed for demonstration, testing, and development purposes. The data mimics real-world Swiss business patterns while ensuring full compliance with Swiss legal requirements.
+
+### Data Characteristics
+
+- **Period**: December 1995 to October 2025 (~30 years)
+- **Total Companies**: 1,000
+- **Distribution**: Exponentially weighted toward recent dates (simulating business growth)
+- **Legal Compliance**: All capital requirements follow Swiss law (AG ≥ 100,000 CHF, GmbH ≥ 20,000 CHF)
+- **Geographic Coverage**: All major Swiss cantons with realistic distribution
+- **Industry Coverage**: 28 NACE industry classification codes
+
+### Data Schema
+
+| Column | Type | Description | Example |
+|--------|------|-------------|---------|
+| `CompanyName` | VARCHAR | Swiss-style company name | "Zurich Banking Switzerland" |
+| `LegalForm` | VARCHAR | Legal structure | AG, GmbH, Einzelfirma, Kollektivgesellschaft, Verein, Stiftung |
+| `UID` | VARCHAR | Swiss Unique Identification Number | CHE-425.790.845 |
+| `RegistrationDate` | DATE | Company registration date | 2025-10-28 |
+| `Canton` | VARCHAR | Swiss canton (English names) | Zürich, Geneva, Bern, Basel-Stadt, etc. |
+| `ShareCapitalCHF` | BIGINT | Share capital in Swiss Francs | 100000 |
+| `IndustryCode` | VARCHAR | 2-digit NACE industry code | 64, 69, 71 |
+| `IndustryDescription` | VARCHAR | Industry classification description | Financial service activities |
+| `Employees` | INTEGER | Number of employees | 1 to 5,000 |
+
+### Legal Form Distribution
+
+- **GmbH** (Gesellschaft mit beschränkter Haftung): ~38%
+- **AG** (Aktiengesellschaft): ~37%
+- **Einzelfirma** (Sole proprietorship): ~17%
+- **Kollektivgesellschaft** (General partnership): ~3%
+- **Stiftung** (Foundation): ~3%
+- **Verein** (Association): ~2%
+
+### Geographic Distribution
+
+Top cantons by company count:
+- **Zürich**: ~24% (252 companies)
+- **Geneva**: ~11% (107 companies)
+- **Vaud**: ~10% (102 companies)
+- **Bern**: ~9% (90 companies)
+- **Aargau**: ~8% (77 companies)
+- Plus 11 other cantons with smaller distributions
