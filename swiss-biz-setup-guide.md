@@ -72,7 +72,7 @@ Navigate to the prompt library and add your custom prompts for easy reuse.
 
 ## 4. Configure the Model
 
-**Important**: Use **gpt-4.1** instead of the default gpt-4o. The default gpt-4o is about 2 years old and has poor performance. **gpt-4.1 is much better.**
+**Important**: Untill recently gpt-4o was the default model. Use **gpt-4.1** instead of the gpt-4o. The gpt-4o is about 2 years old and has poor performance. **gpt-4.1 is much better.**
 
 **Steps:**
 1. Go to **Setup** (see icon below)
