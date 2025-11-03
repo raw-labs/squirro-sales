@@ -25,7 +25,40 @@ The Swiss Biz demo connects to an MXCP server that provides access to synthesize
 
 6. **Save changes**
 
-## 2. Set Up Chart Plotting (Optional)
+## 2. Add Prompt Templates
+
+The prompt library feature allows you to create reusable prompt templates.
+
+![Prompt Library](assets/prompt_library.png)
+
+**Note:** The current Swiss Biz instance has a column on the right with example prompts (created before the prompt library feature existed). You can now add prompts to the library instead for better reusability across projects.
+
+Navigate to the prompt library and add your custom prompts for easy reuse.
+
+**Example prompts to add:**
+1. Show me all companies registered in Zürich in the last 30 days
+2. Show company registration trends by year for the last decade
+3. Show the total capital by year on a line chart
+4. What's the average share capital by legal form and canton?
+5. What legal forms are available in the registry?
+
+## 3. Configure the Model
+
+**Important**: Untill recently gpt-4o was the default model. Use **gpt-4.1** instead of the gpt-4o. The gpt-4o is about 2 years old and has poor performance. **gpt-4.1 is much better.**
+
+**Steps:**
+1. Go to **Setup** (see icon below)
+   ![Setup](assets/setup.png)
+2. Navigate to **Settings** → **Project Configuration**
+3. Find `genai.sqgpt.settings` → Click **Edit**
+4. Replace `gpt-4o` with `gpt-4.1`
+5. **Save changes**
+
+**Why gpt-4.1?** It's the best "one-shot" model (no internal thinking process), providing faster responses with lower token usage. "Thinking" models are more powerful but significantly slower and more expensive.
+
+## 4. Set Up Chart Plotting (Optional)
+
+**Note:** This is a **custom tool** that must be uploaded to the client instance by the engineering team. It is not available by default.
 
 Enable visual data representation through charts.
 
@@ -52,37 +85,6 @@ If plotting time series data, ensure the x-axis is sorted chronologically and th
 
 Once you receive the output from this tool, you MUST paste the output in the RESPONSE to the user at the position where you'd like the chart to appear.
 ```
-
-## 3. Add Prompt Templates
-
-The prompt library feature allows you to create reusable prompt templates.
-
-![Prompt Library](assets/prompt_library.png)
-
-**Note:** The current Swiss Biz instance has a column on the right with example prompts (created before the prompt library feature existed). You can now add prompts to the library instead for better reusability across projects.
-
-Navigate to the prompt library and add your custom prompts for easy reuse.
-
-**Example prompts to add:**
-1. Show me all companies registered in Zürich in the last 30 days
-2. Show company registration trends by year for the last decade
-3. Show the total capital by year on a line chart
-4. What's the average share capital by legal form and canton?
-5. What legal forms are available in the registry?
-
-## 4. Configure the Model
-
-**Important**: Untill recently gpt-4o was the default model. Use **gpt-4.1** instead of the gpt-4o. The gpt-4o is about 2 years old and has poor performance. **gpt-4.1 is much better.**
-
-**Steps:**
-1. Go to **Setup** (see icon below)
-   ![Setup](assets/setup.png)
-2. Navigate to **Settings** → **Project Configuration**
-3. Find `genai.sqgpt.settings` → Click **Edit**
-4. Replace `gpt-4o` with `gpt-4.1`
-5. **Save changes**
-
-**Why gpt-4.1?** It's the best "one-shot" model (no internal thinking process), providing faster responses with lower token usage. "Thinking" models are more powerful but significantly slower and more expensive.
 
 ---
 
